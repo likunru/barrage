@@ -1,6 +1,7 @@
 const WebSocket = require('ws');
 const redis = require('redis');
 const clientRedis = redis.createClient(); // 创建redis客户端
+clientRedis.auth('Jon!Q@W#E'); // 
 const ws = new WebSocket.Server({port: 5000}); // 创建ws服务
 
 // 用来存储不同的socket实例，区分不同用户

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>front-end</title>
+  </head>
+  <style>
+    .danmu{
+      position: fixed;
+      left: 0;
+      visibility: hidden;
+      animation: danmu 5s linear 0s 1;
+    } 
+  </style>
+  <body>
+    <div class="wrap">
+        <h1>听妈妈的话-周杰伦</h1>
+        <div class="main">
+            <div id="box"></div>
+            <video src="../source/mv.mp4" id="video" controls width="720" height="200"></video>
+        </div>
+    </div>
+    <div class="content">
+        <input type="text" id="text"/>
+        <input type="button" value="发弹幕" id="btn"/>
+        <input type="color" id="color"/>
+        <input type="range" id="range" max="40" min="20"/>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
